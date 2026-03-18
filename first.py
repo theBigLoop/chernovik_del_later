@@ -1,5 +1,5 @@
 
-
+#Программа по работе со словом
 word = input('Введите длинное слово - ') # Введите слово
 ''' 
 print('1 - cколько букв в слове')
@@ -24,9 +24,17 @@ def second(word):
     return counter
 
 
+# 3 - количество согласных
+def third(word):
+    vowels = ['a','e','i','o','u','y','а','е','ё','и','о','у','ы','э','ю','я']
+    counter = 0
+    for i in word.lower():
+        if i not in word.lower():
+            counter += 1
+    return counter 
 
 
-# 3 - количество 
+print(third(word))
 
 #Разбираем слова
 
